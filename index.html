@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            border: 5px solid red;
+            margin: 0;
+            padding: 0;
+            display: grid;
+            height: 600px;
+            /* width of grid cell */
+            grid-template-columns: 80px 80px 80px;
+            /* height of grid cell */
+            grid-template-rows: 80px 80px 80px;
+            /* grid-template-rows: repeat(3, 80px); */
+             grid-gap: 15px;
+             /* grid-column-gap: 10px; */
+             /* grid-row-gap: 25px; */
+             /* justify-content: center; */
+             /* justify-content: space-around; */
+             /* justify-content: space-between; */
+             /* justify-content: space-evenly; */
+             /* align-content: space-evenly; */
+
+             /* grid-template-columns: 1fr 1fr 1fr; */
+             /* grid-template-columns:repeat(3,1fr); */
+            
+             /* grid-template-columns: repeat(auto-fill,minmax(150px,350px)); */
+             /* grid-template-columns: repeat(auto-fill,100px); */
+             /* grid-template-rows: repeat(3,150px); */
+            
+        }
+        .one{
+            border: 3px solid black;
+            /* width: 30px; */
+            /* height: 30px; */
+        }
+        .one2{
+            /* justify-self: center; */
+            /* align-self: center; */
+        }
+        .one6{
+            /* justify-self: self-end; */
+            /* align-self: self-end; */
+        }
+        .one1{
+            grid-row-start: 2;
+            grid-row-end: 3; 
+            grid-column-start: 3;
+            grid-column-end: 4;
+        }
+        .one7{
+            grid-row-start: 1;
+            grid-row-end: 2; 
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="main">
+    <div class="one one1">1</div>
+    <div class="one one2">2</div>
+    <div class="one one3">3</div>
+    <div class="one one4">4</div>
+    <div class="one one5">5</div>
+    <div class="one one6">6</div>
+    <div class="one one7">7</div>
+    <div class="one one8">8</div>
+    <div class="one one9">9</div>
+    </div>   
+</body>
+</html>
